@@ -27,17 +27,17 @@ import com.fasterxml.jackson.annotation.JsonManagedReference;
 @Entity
 @Table(name = "properties")
 public class Property {
-    
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     @Column(name = "created_at", updatable = false)
-    @DateTimeFormat(pattern="yyyy-MM-dd")
+    @DateTimeFormat(pattern = "yyyy-MM-dd")
     private Date createdAt;
 
     @Column(name = "updated_at")
-    @DateTimeFormat(pattern="yyyy-MM-dd")
+    @DateTimeFormat(pattern = "yyyy-MM-dd")
     private Date updatedAt;
 
     @Column(name = "address_line1")
@@ -45,8 +45,8 @@ public class Property {
     @Size(min = 5, message = "Please enter an address of at least 5 characters.")
     private String addressLine1;
 
-//    @Column(name = "address_line2")
-//    private String addressLine2;
+    // @Column(name = "address_line2")
+    // private String addressLine2;
 
     @Column(name = "image_url")
     private String imageUrl;
@@ -63,9 +63,8 @@ public class Property {
     // @NotEmpty(message = "Please enter a country name.")
     private String country;
 
-
     @Column(name = "description")
-    @NotEmpty(message = "Please enter a clear description of the rental.")
+    @NotEmpty(message = "Please enter a clear description of the rental no more than 45 characters.")
     @Size(min = 5, message = "Please enter description with at least 5 characters.")
     private String description;
 
@@ -73,8 +72,8 @@ public class Property {
     @NotEmpty(message = "Please enter an accurate description of the rental price. (ex. $5 per night)")
     private String priceDescripiton;
 
-	@JsonManagedReference(value = "property-rating")
-    @OneToMany(mappedBy = "property", fetch = FetchType.LAZY, cascade = CascadeType.ALL, orphanRemoval = false)
+    @JsonManagedReference(value = "property-rating")
+    @OneToMany(mappedBy = "property", fetch = FetchType.LAZY, cascade = CascadeTymessage = "Please enter description with at least 5 characters."use pe.ALL,orphanRemoval=false)
     private List<Rating> myRatings;
 
     @JsonManagedReference(value = "property-comment")
@@ -84,11 +83,11 @@ public class Property {
     @Column(name = "rental_type")
     private String rentalType;
 
-    @ManyToOne(fetch=FetchType.LAZY)
-    @JoinColumn(name="created_by_user_id")
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "created_by_user_id")
     private User createdByUser;
 
-	public List<Comment> getMyComments() {
+    public List<Comment> getMyComments() {
         return myComments;
     }
 
@@ -97,21 +96,26 @@ public class Property {
     }
 
     public User getCreatedByUser() {
-		return createdByUser;
-	}
+        return createdByUser;
+    }
 
-	public void setCreatedByUser(User createdByUser) {
-		this.createdByUser = createdByUser;
-	}
+    public void setCreatedByUser(User createdByUser) {
+        this.createdByUser = createdByUser;
+    }
 
-	public Property() {}
+    public Property() {
+    }
 
     @Override
-    public boolean equals (Object o) {
-        
-        if (this == o) { return true; }
+    public boolean equals(Object o) {
 
-        if (o == null || getClass() != o.getClass()) { return false; }
+        if (this == o) {
+            return true;
+        }
+
+        if (o == null || getClass() != o.getClass()) {
+            return false;
+        }
 
         Property that = (Property) o;
         return Objects.equals(this.id, that.id);
@@ -165,13 +169,13 @@ public class Property {
         this.addressLine1 = addressLine1;
     }
 
-//    public String getAddressLine2() {
-//        return addressLine2;
-//    }
-//
-//    public void setAddressLine2(String addressLine2) {
-//        this.addressLine2 = addressLine2;
-//    }
+    // public String getAddressLine2() {
+    // return addressLine2;
+    // }
+    //
+    // public void setAddressLine2(String addressLine2) {
+    // this.addressLine2 = addressLine2;
+    // }
 
     public String getImageUrl() {
         return imageUrl;

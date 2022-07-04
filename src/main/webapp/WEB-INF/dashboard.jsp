@@ -89,10 +89,12 @@
 								<h4 class="card-title"> <strong>${properties.city}, ${properties.state}</strong></h4>
 								<br>
 								<p class="card-text"> <img src="${properties.imageUrl}"  class="img-sml"/></p>
-								<p class="card-text"> <strong>Description of Property:</strong> ${properties.description}</p>
+								<p class="card-text"> <strong>Description:</strong> ${properties.description}</p>
 								<p class="card-text"> <strong>Posted by:</strong>${properties.createdByUser.displayName}</p>
 								<br> 
-								<a href="/property/${properties.id}" class="mb-2  btn btn-outline-dark mx-2 ">More Details</a>
+								<div class="sticky-btn btn-group-sm mt-4">
+								<a href="/property/${properties.id}" class="btn btn-outline-dark mx-2 ">More Details</a>
+								</div>
 								<%-- <c:choose>
 										<c:when test="${loggedInUser.id == property.createdByUser.id}"> --%>
 											<%-- <form:form action="/projects/${project.id}/delete" method="delete">

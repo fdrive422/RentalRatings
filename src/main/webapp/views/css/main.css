@@ -43,7 +43,7 @@
 	transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
 	overflow: hidden;
 	border-radius: 20px;
-	height: 450px;
+	height: 375px;
 	width: 350px;
 	box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.2);
 }
@@ -64,8 +64,8 @@
 }
 
 .img-lg {
-	width: 425px;
-	height: 275px;
+	width: 525px;
+	height: 325px;
 	border-radius: 20px;
 	border-color: #2D4F85;
 	box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.2);
@@ -114,7 +114,11 @@ body {
 	overflow-y: scroll;
 }
 
-
+.sticky-btn {
+	position: sticky;
+	bottom: 1rem;
+  }
+  
 /* CARDS */
 /* 
 body {
