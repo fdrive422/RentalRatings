@@ -57,7 +57,7 @@
 		<div class="my-3 row align-items-center">
 			<div class="row g-3 mx-2 my-2">
 				<div class="col-3"> <h5>Rental Address:</h5></div>
-				<div class="col-6">${ property.addressLine1 }, ${ property.city }, ${ property.state}</div>
+				<div class="col-6">${property.addressLine1}, ${property.city}, ${property.state}</div>
 			</div>
 			<div class="row g-3 mx-2 my-2">
 				<div class="col-3">
@@ -69,25 +69,25 @@
 				<div class="col-3">
 					<h5>Property Description:</h5>
 				</div>
-				<div class="col-6">${ property.description }</div>
+				<div class="col-6">${property.description}</div>
 			</div>
-			<!-- 								<div class="row g-3 mx-2 my-2">
+			<div class="row g-3 mx-2 my-2">
 				<div class="col-3">
 					<h5>Average Rating:</h5>
 				</div>
-				<div class="col-6"> - placeholder - </div>			update when avg ratings logic complete
-			</div> -->
+				<div class="col-6"> ${properties.property-rating}</div>		<%--update when avg ratings logic complete */ --%>
+			</div>
 			<div class="row g-3 mx-2 my-2">
 				<div class="col-3">
 					<h5>Property Type:</h5>
 				</div>
-				<div class="col-6">${ property.rentalType }</div>
+				<div class="col-6">${property.rentalType}</div>
 			</div>
 			<div class="row g-3 mx-2 my-2">
 				<div class="col-3">
 					<h5>Rental Per Night:</h5>
 				</div>
-				<div class="col-6">$ ${ property.priceDescription }</div>
+				<div class="col-6">$ ${property.priceDescription}</div>
 			</div>
 			<div class="row g-3 mx-2 my-2">
 				<div class="col-3">
@@ -99,14 +99,12 @@
 				</div>
 			</div>
 			<div class="p-4">
-				<img src="${ property.imageUrl }" class="img-lg"
-					alt="${ property.rentalType }" />
+				<img src="${property.imageUrl}" class="img-lg" alt="${property.rentalType}" />
 			</div>
-			<div class="d-flex col-9 mt-3 my-2">
-				<a href="/property/${ property.id}/ratings" class="btn btn-outline-dark mx-2">Rate &
-					Comment</a> <a href="/property/${ property.id }/edit"
-					class="btn btn-outline-dark mx-2">Edit Rental</a>
-				<form:form action="/property/${property.id}/delete" method="delete">
+			<div class="d-flex btn-group-sm col-9 mt-3 my-2">
+				<a href="/property/${ property.id}/ratings" class="btn btn-outline-dark mx-2">Rate & Comment</a> 
+				<a href="/property/${ property.id }/edit" class="btn btn-outline-dark mx-2">Edit Rental</a>
+				<form:form action="/property/${property.id}/delete" method="delete" class="btn-group-sm">
 					<input type="submit" value="Remove Rental" class="mx-2 btn btn-outline-danger">
 				</form:form>
 			</div>

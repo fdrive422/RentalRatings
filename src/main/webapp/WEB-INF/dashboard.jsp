@@ -82,17 +82,17 @@
 		<c:forEach items="${property}" var="properties">
 			<%-- <c:if
 				test="${property.loggedInUser || loggedInUser.id == property.createdByUser.id}"> --%>
-				<div class="card bg-transparent col-5 mx-auto mb-4 p-4">
+				<div class="card sml-card bg-transparent col-5 mx-auto mb-4 p-4">
 					<div class="row ">
 						<div class="col-12">
-							<div class="card-block">
-								<h4 class="card-title"> <strong>${ properties.city }, ${ properties.state }</strong></h4>
+							<div class="card-block btn-group-sm">
+								<h4 class="card-title"> <strong>${properties.city}, ${properties.state}</strong></h4>
 								<br>
-								<p class="card-text"> <strong>Description of Property:</strong> ${properties.description} </p>
-								<p class="card-text"> <img src="${properties.imageUrl}"  class="img-sml"/> </p>
-								<%-- <p class="card-text"> <strong>Rating Comments:</strong> ${properties.myCommnet} </p> --%>
+								<p class="card-text"> <img src="${properties.imageUrl}"  class="img-sml"/></p>
+								<p class="card-text"> <strong>Description of Property:</strong> ${properties.description}</p>
+								<p class="card-text"> <strong>Posted by:</strong>${properties.createdByUser.displayName}</p>
 								<br> 
-								<a href="/property/${ properties.id }" class="mb-2 btn btn-outline-dark mx-2 ">More Details</a>
+								<a href="/property/${properties.id}" class="mb-2  btn btn-outline-dark mx-2 ">More Details</a>
 								<%-- <c:choose>
 										<c:when test="${loggedInUser.id == property.createdByUser.id}"> --%>
 											<%-- <form:form action="/projects/${project.id}/delete" method="delete">

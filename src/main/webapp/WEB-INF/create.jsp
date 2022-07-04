@@ -103,8 +103,10 @@
 					<form:input type="hidden" path="createdByUser" name="created_by_user_id"
 						value="${loggedInUser.id}" />
 				</div>
-				<a href="/dashboard" class="btn btn-outline-secondary">Cancel</a>
-				<input type="submit" value="Create" class="btn btn-outline-dark mx-1 my-3">
+				<div class="">
+					<a href="/dashboard" class="btn btn-outline-secondary">Cancel</a>
+					<input type="submit" value="Create" class="btn btn-outline-dark mx-1 my-3">
+				</div
 			</form:form>
 		</div>
 	</div>

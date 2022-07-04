@@ -97,7 +97,7 @@
 					<form:input type="hidden" path="rating.id.propertyId" value="${property.id}"
 						class="form-control" />
 				</div>
-				<p class="d-flex col-9 my-2">
+				<p class="d-flex col-9 my-2 btn-group-sm">
 					<input type="submit" value="Submit" class="btn btn-outline-dark">
 				</p>
 			</form:form>
