@@ -22,7 +22,8 @@
 	<title>Dashboard</title>
 </head>
 <body class="body-bg">
-	<div class="mt-3 text-center ">
+
+<div class="mt-3 text-center ">
 		<div class="mx-4 d-flex justify-content-between align-items-center">
 			<h1>Rental Ratings </h1>
 			<p class="mx-3">Welcome, ${loggedInUser.displayName}</p>
@@ -45,7 +46,7 @@
 		</div>
 	</div>
 	
-<%-- <div class="card container d-flex col-12 mx-auto justify-content-between bg-transparent mt-4 mb-2 p-4">
+<div class="card container d-flex col-12 mx-auto justify-content-between bg-transparent mt-4 mb-2 p-4">
 		<div class="d-flex justify-content-between">
 			<div class="my-2">
 				<h2> All Property Listings</h2>
@@ -73,44 +74,55 @@
 			</tbody>
 		</table>
 	</div>
-</div> --%>
+</div>
 
-<div class= "card container d-flex col-12 mx-auto justify-content-between bg-transparent mt-4 mb-4 p-4">
-		<div class="my-2">
-				<h2> Property Listings</h2>
-		<div class= "display-card bg-transparent mx-auto p-5">
-		<c:forEach items="${property}" var="properties">
-			<%-- <c:if
-				test="${property.loggedInUser || loggedInUser.id == property.createdByUser.id}"> --%>
-				<div class="card bg-transparent col-5 mx-auto mb-4 p-4">
-					<div class="row ">
-						<div class="col-12">
-							<div class="card-block">
-								<h4 class="card-title"> <strong>${ properties.city }, ${ properties.state }</strong></h4>
-								<br>
-								<p class="card-text"> <strong>Description of Property:</strong> ${properties.description} </p>
-								<p class="card-text"> <img src="${properties.imageUrl}"  class="img-sml"/> </p>
-								<%-- <p class="card-text"> <strong>Rating Comments:</strong> ${properties.myCommnet} </p> --%>
-								<br> 
-								<a href="/property/${ properties.id }" class="mb-2 btn btn-outline-dark mx-2 ">More Details</a>
-								<%-- <c:choose>
-										<c:when test="${loggedInUser.id == property.createdByUser.id}"> --%>
-											<%-- <form:form action="/projects/${project.id}/delete" method="delete">
-												<input type="submit" value="Close Project" class="btn btn-outline-danger">
-											</form:form> --%>
-										<%-- </c:when>
-										<c:otherwise>
-											<a href="/projects/${project.id}/leave" class="mb-2 btn btn-warning ">Leave Team</a>
-										</c:otherwise>
-									</c:choose> --%>
-							</div>
-						</div>
-				 	</div>
-				</div>
-			<%-- </c:if> --%>
-		</c:forEach>
+<%-- <body>
+<div class="container">
+<c:forEach items="${property}" var="properties">
+	<div class="card">
+		<div class="face face1">
+			<div class="content">
+				<img src="${properties.imageUrl}" class="img-sml" />
+				<h3>Property</h3>
+			</div>
 		</div>
+		<div class="face face2">
+			<div class="content">
+				<p>${ properties.city }, ${ properties.state }</p>
+				<a href="/property/${ properties.id }"> Read More</a>
+			</div>
 		</div>
 	</div>
- </body>
+	<div class="card">
+		<div class="face face1">
+			<div class="content">
+				<img src="${propert.imageUrl}" />
+				<h3>Property</h3>
+			</div>
+		</div>
+		<div class="face face2">
+			<div class="content">
+				<p>${ properties.city }, ${ properties.state }</p>
+				<a href="/property/${ properties.id }"> Read More</a>
+			</div>
+		</div>
+	</div>
+	<div class="card">
+		<div class="face face1">
+			<div class="content">
+				<img src="${properties.imageUrl}"/>
+				<h3>Property</h3>
+			</div>
+		</div>
+		<div class="face face2">
+			<div class="content">
+				<p>${ properties.city }, ${ properties.state }</p>
+				<a href="/property/${ properties.id }"> Read More</a>
+			</div>
+		</div>
+	</div>
+	</c:forEach>
+</div> --%>
+
+</body>
 </html>
