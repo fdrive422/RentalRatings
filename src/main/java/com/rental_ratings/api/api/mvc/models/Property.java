@@ -69,7 +69,7 @@ public class Property {
     private String description;
 
     @Column(name = "price_description")
-    @NotEmpty(message = "Please enter an accurate description of the rental price. (ex. $5 per night)")
+    @NotEmpty(message = "Please enter an accurate rental price. (ex. $100.99 per night)")
     private String priceDescripiton;
 
     @JsonManagedReference(value = "property-rating")

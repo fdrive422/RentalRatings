@@ -98,8 +98,10 @@
 					<form:input type="hidden" path="createdByUser" name="created_by_user_id"
 						value="${loggedInUser.id}" />
 				</div>
-				<a href="/dashboard" class="btn btn-outline-secondary shimmer-btn shimmer-btn:hover">Cancel</a>
-				<input type="submit" value="Update" class="btn btn-outline-dark shimmer-btn shimmer-btn:hovermx-1 my-3">
+				<div class="btn-group-sm">
+					<a href="/dashboard" class="btn btn-outline-secondary shimmer-btn shimmer-btn:hover mx-1">Cancel</a>
+					<input type="submit" value="Update" class="btn btn-outline-primary shimmer-btn shimmer-btn:hover mx-1 my-3">
+				</div>
 			</form:form>
 		</div>
 	</div>
