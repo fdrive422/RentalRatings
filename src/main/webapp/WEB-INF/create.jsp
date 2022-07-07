@@ -104,8 +104,8 @@
 						value="${loggedInUser.id}" />
 				</div>
 				<div class="">
-					<a href="/dashboard" class="btn btn-outline-secondary">Cancel</a>
-					<input type="submit" value="Create" class="btn btn-outline-dark mx-1 my-3">
+					<a href="/dashboard" class="btn btn-outline-secondary shimmer-btn shimmer-btn:hover">Cancel</a>
+					<input type="submit" value="Create" class="btn btn-outline-dark shimmer-btn shimmer-btn:hover mx-1 my-3">
 				</div
 			</form:form>
 		</div>

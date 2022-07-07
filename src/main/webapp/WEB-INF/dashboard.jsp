@@ -93,7 +93,7 @@
 								<p class="card-text"> <strong>Posted by:</strong>${properties.createdByUser.displayName}</p>
 								<br> 
 								<div class="sticky-btn btn-group-sm mt-4">
-								<a href="/property/${properties.id}" class="btn btn-outline-dark mx-2 ">More Details</a>
+								<a href="/property/${properties.id}" class="btn btn-outline-dark shimmer-btn shimmer-btn:hover mx-2 ">More Details</a>
 								</div>
 								<%-- <c:choose>
 										<c:when test="${loggedInUser.id == property.createdByUser.id}"> --%>

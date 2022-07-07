@@ -119,6 +119,18 @@ body {
 	bottom: 1rem;
   }
   
+.shimmer-btn{
+	background-image: linear-gradient(-60deg, transparent, transparent 40%, #ffffff44 40%, #ffffff44 60%, transparent 60%, transparent 100%);
+	background-size: 200% 100%;
+	background-repeat: no-repeat;
+	background-position-x: 150%
+}
+
+.shimmer-btn:hover{
+	background-position-x: -150%;
+	transition: background-position-x 600ms;
+}
+
 /* CARDS */
 /* 
 body {

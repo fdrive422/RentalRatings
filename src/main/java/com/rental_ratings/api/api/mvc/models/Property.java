@@ -64,7 +64,7 @@ public class Property {
     private String country;
 
     @Column(name = "description")
-    @NotEmpty(message = "Please enter a clear description of the rental no more than 45 characters.")
+    @NotEmpty(message = "Please enter a clear description of the rental.")
     @Size(min = 5, message = "Please enter description with at least 5 characters.")
     private String description;
 
@@ -73,7 +73,7 @@ public class Property {
     private String priceDescripiton;
 
     @JsonManagedReference(value = "property-rating")
-    @OneToMany(mappedBy = "property", fetch = FetchType.LAZY, cascade = CascadeTymessage = "Please enter description with at least 5 characters."use pe.ALL,orphanRemoval=false)
+    @OneToMany(mappedBy = "property", fetch = FetchType.LAZY, cascade = CascadeType.ALL, orphanRemoval = false)
     private List<Rating> myRatings;
 
     @JsonManagedReference(value = "property-comment")

@@ -102,10 +102,10 @@
 				<img src="${property.imageUrl}" class="img-lg" alt="${property.rentalType}" />
 			</div>
 			<div class="d-flex btn-group-sm col-9 mt-3 my-2">
-				<a href="/property/${ property.id}/ratings" class="btn btn-outline-dark mx-2">Rate & Comment</a> 
-				<a href="/property/${ property.id }/edit" class="btn btn-outline-dark mx-2">Edit Rental</a>
+				<a href="/property/${ property.id}/ratings" class="btn btn-outline-dark shimmer-btn shimmer-btn:hover mx-2">Rate & Comment</a> 
+				<a href="/property/${ property.id }/edit" class="btn btn-outline-dark shimmer-btn shimmer-btn:hover mx-2">Edit Rental</a>
 				<form:form action="/property/${property.id}/delete" method="delete" class="btn-group-sm">
-					<input type="submit" value="Remove Rental" class="mx-2 btn btn-outline-danger">
+					<input type="submit" value="Remove Rental" class="mx-2 btn btn-outline-danger shimmer-btn shimmer-btn:hover">
 				</form:form>
 			</div>
 		</div>

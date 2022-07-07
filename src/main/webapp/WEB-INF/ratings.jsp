@@ -98,7 +98,7 @@
 						class="form-control" />
 				</div>
 				<p class="d-flex col-9 my-2 btn-group-sm">
-					<input type="submit" value="Submit" class="btn btn-outline-dark">
+					<input type="submit" value="Submit" class="btn btn-outline-primary shimmer-btn shimmer-btn:hover">
 				</p>
 			</form:form>
 		</div>

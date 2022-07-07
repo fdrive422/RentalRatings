@@ -49,7 +49,7 @@
                     <form:errors path="confirmPassword" class="text-danger"/>
                     <form:password path="confirmPassword" class="form-control"/>
                     <p class="pt-3">
-                        <input type="submit" value="Register" class="btn btn-outline-dark">
+                        <input type="submit" value="Register" class="btn btn-outline-dark shimmer-btn shimmer-btn:hover">
                     </p>
                 </form:form>
             </div>
@@ -63,7 +63,7 @@
                     <form:errors path="password" class="text-danger"/>
                     <form:password path="password" class="form-control"/>
                     <p class="pt-3">
-                        <input type="submit" value="Login" class="btn btn-outline-dark">
+                        <input type="submit" value="Login" class="btn btn-outline-dark shimmer-btn shimmer-btn:hover">
                     </p>
                 </form:form>
             </div>
