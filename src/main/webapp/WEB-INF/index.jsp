@@ -48,7 +48,7 @@
                     <form:label path="confirmPassword" class="py-2">Confirm Password:</form:label>
                     <form:errors path="confirmPassword" class="text-danger"/>
                     <form:password path="confirmPassword" class="form-control"/>
-                    <p class="pt-3">
+                    <p class="btn-group-sm pt-3">
                         <input type="submit" value="Register" class="btn btn-outline-dark shimmer-btn shimmer-btn:hover">
                     </p>
                 </form:form>
@@ -62,7 +62,7 @@
                     <form:label path="password" class="py-2">Password:</form:label>
                     <form:errors path="password" class="text-danger"/>
                     <form:password path="password" class="form-control"/>
-                    <p class="pt-3">
+                    <p class="btn-group-sm pt-3">
                         <input type="submit" value="Login" class="btn btn-outline-dark shimmer-btn shimmer-btn:hover">
                     </p>
                 </form:form>

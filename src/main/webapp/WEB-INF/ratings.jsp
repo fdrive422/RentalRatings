@@ -51,7 +51,7 @@
 			<div class="col-12">
 				<h2>Post a rating and comment</h2>
 				<div class="p-4 row ">
-					<div class="col-sm-2"><h6>Rental Property:</h6></div>
+					<div class="col-sm-2"><h6>Property:</h6></div>
 					<div class="col-sm-5"><img src="${ property.imageUrl }" class="img-md" alt="Rounded 3 image" /></div>
 				</div>
 				<div class=" m-3 row ">

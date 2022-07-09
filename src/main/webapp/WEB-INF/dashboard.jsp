@@ -58,7 +58,7 @@
 					<th>Property</th>
 					<th>Location</th>
 					<th>Rental Type</th>
-				 	<th>Rate</th>
+					<th>Rate</th>
 				</tr>
 			</thead>
 			<tbody>
@@ -107,12 +107,12 @@
 									</c:choose> --%>
 							</div>
 						</div>
-				 	</div>
+					</div>
 				</div>
 			<%-- </c:if> --%>
 		</c:forEach>
 		</div>
 		</div>
 	</div>
- </body>
+</body>
 </html>

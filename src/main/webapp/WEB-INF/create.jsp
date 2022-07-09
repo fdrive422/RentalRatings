@@ -59,17 +59,17 @@
 			<form:form action="/property/create" method="post" modelAttribute="newProperty"
 				class="p-4 bg-transparent text-dark">
 				<div class="form-group">
-					<form:label path="addressLine1" class="py-2">Rental Address: </form:label>
+					<form:label path="city" class="py-2">Street Address: </form:label>
 					<form:errors path="addressLine1" class="text-danger" />
-					<form:input path="addressLine1" class="form-control text-secondary fst-italic" />
+					<form:input path="addressLine1" class="form-control text-secondary fst-italic" />  
 				</div>
 				<div class="form-group">
-					<form:label path="city" class="py-2">Rental City: </form:label>
+					<form:label path="city" class="py-2">City: </form:label>
 					<form:errors path="city" class="text-danger" />
 					<form:input path="city" class="form-control text-secondary fst-italic" />
 				</div>
 				<div class="form-group">
-					<form:label path="state" class="py-2">Rental State: </form:label>
+					<form:label path="state" class="py-2">State: </form:label>
 					<form:errors path="state" class="text-danger" />
 					<form:input path="state" class="form-control text-secondary fst-italic" />
 				</div>
@@ -79,23 +79,23 @@
 					<form:input path="country" class="form-control text-secondary fst-italic" />
 				</div>
 				<div class="form-group">
-					<form:label path="description" class="py-2">Rental Description: </form:label>
+					<form:label path="description" class="py-2">Property Description: </form:label>
 					<form:errors path="description" class="text-danger" />
 					<form:textarea path="description"
 						class="form-control text-secondary fst-italic h-25" rows="2" />
 				</div>
 				<div class="form-group">
-					<form:label path="rentalType" class="py-2">Rental Type: </form:label>
+					<form:label path="rentalType" class="py-2">Property Type: </form:label>
 					<form:errors path="rentalType" class="text-danger" />
 					<form:input path="rentalType" class="form-control text-secondary fst-italic" />
 				</div>
 				<div class="form-group">
-					<form:label path="priceDescripiton" class="py-2">Rental Price: </form:label>
+					<form:label path="priceDescripiton" class="py-2">Price per Night: </form:label>
 					<form:errors path="priceDescripiton" class="text-danger" />
 					<form:input path="priceDescripiton" class="form-control text-secondary fst-italic" />
 				</div>
 				<div class="form-group">
-					<form:label path="imageUrl" class="py-2">Image URL: </form:label>
+					<form:label path="imageUrl" class="py-2">Image Source URL: </form:label>
 					<form:errors path="imageUrl" class="text-danger" />
 					<form:input path="imageUrl" class="form-control text-secondary fst-italic" />
 				</div>

@@ -56,7 +56,7 @@
 		</div>
 		<div class="my-3 row align-items-center">
 			<div class="row g-3 mx-2 my-2">
-				<div class="col-3"> <h5>Rental Address:</h5></div>
+				<div class="col-3"> <h5>Address:</h5></div>
 				<div class="col-6">${property.addressLine1}, ${property.city}, ${property.state}</div>
 			</div>
 			<div class="row g-3 mx-2 my-2">
@@ -67,7 +67,7 @@
 			</div>
 			<div class="row g-3 mx-2 my-2">
 				<div class="col-3">
-					<h5>Property Description:</h5>
+					<h5>Description:</h5>
 				</div>
 				<div class="col-6">${property.description}</div>
 			</div>
@@ -85,13 +85,13 @@
 			</div>
 			<div class="row g-3 mx-2 my-2">
 				<div class="col-3">
-					<h5>Rental Per Night:</h5>
+					<h5>Rate per Night:</h5>
 				</div>
 				<div class="col-6">$ ${property.priceDescription}</div>
 			</div>
 			<div class="row g-3 mx-2 my-2">
 				<div class="col-3">
-					<h5>Last Updated on:</h5>
+					<h5>Last Updated:</h5>
 				</div>
 				<div class="col-6">
 					<fmt:formatDate type="both" dateStyle="medium" timeStyle="short"
