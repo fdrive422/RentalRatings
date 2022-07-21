@@ -90,7 +90,7 @@
 								<br>
 								<p class="card-text"> <img src="${properties.imageUrl}"  class="img-sml"/></p>
 								<p class="card-text"> <strong>Description:</strong> ${properties.description}</p>
-								<p class="card-text"> <strong>Posted by:</strong>${properties.createdByUser.displayName}</p>
+								<p class="card-text"> <strong>Posted by: </strong>${properties.createdByUser.displayName}</p>
 								<br> 
 								<div class="sticky-btn btn-group-sm mt-4">
 								<a href="/property/${properties.id}" class="btn btn-outline-dark shimmer-btn shimmer-btn:hover mx-2 ">More Details</a>
