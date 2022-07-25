@@ -4,25 +4,25 @@
 	font-family: "Trebuchet MS", Helvetica, sans-serif;
 
 	/* THEME - milkyway */
-	background-image: linear-gradient(to right, #a6abae 0%, #E2EBF0 100%);	
+	/* background-image: linear-gradient(to right, #a6abae 0%, #E2EBF0 100%);	 */
 
 	/* THEME - Mountain Rock */
 	/* background-image: linear-gradient(to right, #868f96 0%, #E2EBF0 100%); */
-	
+
 	/* THEME - solid stone */
 	/* background-image: linear-gradient(to top, #243949 0%, #517fa4 100%); */
-	
+
 	/* THEME - sky rainbow */
 	/* background-image: linear-gradient(to right, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%);	 */
-	
+
 	/* THEME - burning sprint */
 	/* background-image: linear-gradient(to top, #4fb576 0%, #44c489 30%, #28a9ae 46%, #28a2b7 59%, #4c7788 71%, #6c4f63 86%, #432c39 100%);   */
 
 	/* THEME - Supreme Sky */
 	/* background-image: linear-gradient(-225deg, #D4FFEC 0%, #57F2CC 48%, #4596FB 100%); */
-	
+
 	/* THEME Sharpeye Eagle */
-	/* background-image: linear-gradient(to top, #9890e3 0%, #b1f4cf 100%); */
+	background-image: linear-gradient(to top, #9890e3 0%, #b1f4cf 100%);
 }
 
 .wrapper {
@@ -64,7 +64,7 @@
 }
 
 .img-thumbnail {
-	border-color: #2D4F85;
+	border-color: #2d4f85;
 	box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.2);
 }
 
@@ -72,7 +72,7 @@
 	width: 525px;
 	height: 325px;
 	border-radius: 20px;
-	border-color: #2D4F85;
+	border-color: #2d4f85;
 	box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.2);
 }
 
@@ -80,7 +80,7 @@
 	width: 220px;
 	height: 140px;
 	border-radius: 20px;
-	border-color: #2D4F85;
+	border-color: #2d4f85;
 	box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.2);
 }
 
@@ -88,19 +88,18 @@
 	width: 150px;
 	height: 95px;
 	border-radius: 20px;
-	border-color: #2D4F85;
+	border-color: #2d4f85;
 	box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.2);
 }
 
 .border {
-	border-color: #2D4F85;
+	border-color: #2d4f85;
 }
 
 .nav {
 	box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.2);
 	border-radius: 20px;
 }
-
 
 /* allows styling of of background with no height limit */
 html,
@@ -124,14 +123,22 @@ body {
 	bottom: 1rem;
 }
 
-.shimmer-btn{
-	background-image: linear-gradient(-60deg, transparent, transparent 40%, #ffffff44 40%, #ffffff44 60%, transparent 60%, transparent 100%);
+.shimmer-btn {
+	background-image: linear-gradient(
+		-60deg,
+		transparent,
+		transparent 40%,
+		#ffffff44 40%,
+		#ffffff44 60%,
+		transparent 60%,
+		transparent 100%
+	);
 	background-size: 200% 100%;
 	background-repeat: no-repeat;
-	background-position-x: 150%
+	background-position-x: 150%;
 }
 
-.shimmer-btn:hover{
+.shimmer-btn:hover {
 	background-position-x: -150%;
 	transition: background-position-x 600ms;
 }
