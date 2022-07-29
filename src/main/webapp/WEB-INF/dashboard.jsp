@@ -36,7 +36,7 @@
 				</button>
 				<div class="collapse navbar-collapse" id="navbarNav">
 					<ul class="navbar-nav">
-						<li class="m-1 nav-item"><a class="nav-link" href="/dashboard">DASHBOARD </a></li>
+						<li class="m-1 nav-item"><a class="nav-link disabled" href="/dashboard">DASHBOARD </a></li>
 						<li class="m-1 nav-item"><a class="nav-link" href="/property/new">ADD RENTAL</a></li>
 						<li class="m-1 nav-item"><a class="nav-link" href="/">SIGN OUT</a></li>
 					</ul>
