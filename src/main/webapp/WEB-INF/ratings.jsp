@@ -25,7 +25,6 @@
 		<div class="mx-4 d-flex justify-content-between align-items-center">
 			<h1>Rental Ratings </h1>
 			<p class="mx-3">Welcome, ${loggedInUser.displayName}</p>
-			<!-- update w/controller mapping -->
 		</div>
 		<div class="mt-2 mx-4 mb-3 text-center nav">
 			<nav class="navbar navbar-expand-lg navbar-light bg-transparent">
@@ -103,7 +102,6 @@
 			</form:form>
 		</div>
 		<div class="my-5 mx-4">
-			<%-- <h5>Customer Comments:</h5> --%>
 			<table class="table table-hover ">
 				<thead>
 					<tr>
