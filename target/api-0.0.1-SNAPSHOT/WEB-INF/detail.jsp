@@ -71,12 +71,12 @@
 				</div>
 				<div class="col-6">${property.description}</div>
 			</div>
-			<div class="row g-3 mx-2 my-2">
+<%-- 			<div class="row g-3 mx-2 my-2">
 				<div class="col-3">
 					<h5>Average Rating:</h5>
 				</div>
-				<div class="col-6"> ${properties.property-rating}</div>		<%--update when avg ratings logic complete */ --%>
-			</div>
+				<div class="col-6"> ${properties.property-rating}</div>		update when avg ratings logic complete */
+			</div> --%>
 			<div class="row g-3 mx-2 my-2">
 				<div class="col-3">
 					<h5>Property Type:</h5>
