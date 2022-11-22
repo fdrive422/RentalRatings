@@ -1,7 +1,7 @@
 # Retnal Ratings
 Rental Ratings is an application to rate and comment on rental properties.
 
-### <a href="http://35.91.163.16">LIVE DEMO</a>
+// ### <a href="http://35.91.163.16">LIVE DEMO</a>
 
 Dashboard
 ![RentalRatings](https://user-images.githubusercontent.com/72363705/187573849-e7336671-77ad-40d8-ad6b-2b9701342f4d.png)
